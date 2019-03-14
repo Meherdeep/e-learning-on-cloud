@@ -1,7 +1,7 @@
 function certify(){
     var email = sessionStorage.getItem('uname');
     var request = new XMLHttpRequest();
-    var req_url = 'http://localhost:5000/uid?email=' + email;
+    var req_url = 'https://e-learning-on-cloud.herokuapp.com/uid?email=' + email;
     // console.log(req_url);
     request.open('GET', req_url, true);
     request.onload = function () {
