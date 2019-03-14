@@ -10,8 +10,7 @@ def mongodb_parameters():
 
     params = {
         'dblink': 'mongodb://test:test123@ds237363.mlab.com:37363/meher',
-        'database_name': 'meher',
-        'collection_name': 'products'
+        'database_name': 'meher'
     }
 
     return params
