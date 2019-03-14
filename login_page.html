@@ -5,68 +5,68 @@
   <meta charset="UTF-8">
   <title>Sign up and login form</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,100' rel='stylesheet' type='text/css'>
-  
-  
-      <link rel="stylesheet" href="css/login_page.css">
 
-  
+
+  <link rel="stylesheet" href="css/login_page.css">
+
+
 </head>
 
 <body background="img/website-background.png">
 
-  <body>
+<body>
 
-  <div class="container">
-    <div class="backbox">
-      <div class="loginMsg">
-        <div class="textcontent">
-          <p class="title">Don't have an account?</p>
-          <p>Sign up to start shopping.</p>
-          <button id="switch1">SIGN UP</button>
-        </div>
-      </div>
-      <div class="signupMsg visibility">
-        <div class="textcontent">
-          <p class="title">Have an account?</p>
-          <p>Log in to see all your collection.</p>
-          <button id="switch2">LOG IN</button>
-        </div>
+<div class="container">
+  <div class="backbox">
+    <div class="loginMsg">
+      <div class="textcontent">
+        <p class="title">Don't have an account?</p>
+        <p>Sign up to start shopping.</p>
+        <button id="switch1">SIGN UP</button>
       </div>
     </div>
-    <!-- backbox -->
-
-    <div class="frontbox">
-      <div class="login">
-        <h2>LOG IN</h2>
-        <div class="inputbox">
-          <input type="text" name="email" placeholder="  EMAIL">
-          <input type="password" name="password" placeholder="  PASSWORD">
-        </div>
-        <h5>FORGOT PASSWORD?</h5>
-        <button onclick=""><a href="input_page.html">LOG IN</a></button>
+    <div class="signupMsg visibility">
+      <div class="textcontent">
+        <p class="title">Have an account?</p>
+        <p>Log in to see all your collection.</p>
+        <button id="switch2">LOG IN</button>
       </div>
-
-      <div class="signup hide">
-        <h2>SIGN UP</h2>
-        <div class="inputbox">
-          <input type="text" name="fullname" placeholder="  FULLNAME">
-          <input type="text" name="email" placeholder="  EMAIL">
-          <input type="password" name="password" placeholder="  PASSWORD">
-        </div>
-        <button onclick="input_page.html"><a href="input_page.html">SIGN UP</a></button>
-      </div>
-
     </div>
   </div>
+  <!-- backbox -->
+
+  <div class="frontbox">
+    <div class="login">
+      <h2>LOG IN</h2>
+      <div class="inputbox">
+        <input type="text" name="email" placeholder="  EMAIL">
+        <input type="password" name="password" placeholder="  PASSWORD">
+      </div>
+      <h5>FORGOT PASSWORD?</h5>
+      <button onclick="login()"><a href="input_page.html">LOG IN</a></button>
+    </div>
+
+    <div class="signup hide">
+      <h2>SIGN UP</h2>
+      <div class="inputbox">
+        <input type="text" name="fullname" placeholder="  FULLNAME">
+        <input type="text" name="email" placeholder="  EMAIL">
+        <input type="password" name="password" placeholder="  PASSWORD">
+      </div>
+      <button onclick="signup()"><a href="login_page.html">SIGN UP</a></button>
+    </div>
+
+  </div>
+</div>
 </body>
 
 </html>
-  
-  
 
-    <script  src="js/login_page.js"></script>
+
+
+<script  src="js/login_page.js"></script>
 
 
 
