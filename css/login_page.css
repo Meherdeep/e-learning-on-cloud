@@ -1,0 +1,213 @@
+body{
+  font-family: 'Roboto', sans-serif;
+          background:"website-background.png";
+        background-color: blue;
+        font-size: '13px';
+        font-family: 'Open Sans', sans-serif;
+   
+        font-size: '13px';
+        font-family: 'Open Sans', sans-serif;
+      
+      
+    background-size:7680px 2160px;
+    image-rendering: optimizeSpeed;
+        image-rendering: -moz-crisp-edges;
+        image-rendering: -o-crisp-edges;
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: pixelated;
+        image-rendering: optimize-contrast;
+        -ms-interpolation-mode: nearest-neighbor;
+        -webkit-animation:move 300s linear infinite;
+        -moz-animation:move 300s linear infinite;
+        -ms-animation:move 300s linear infinite;
+        animation:move 300s linear infinite;
+        z-index: -2;
+}
+@-webkit-keyframes move {
+ 0% {
+   background-position: 0 0;
+ }
+ 100% {
+     background-position: 7680px 0px;
+ }
+}@
+moz-keyframes move{
+    0% {background-position: 0 0;}
+    100%{background-position:7680px 0px;}
+}
+
+@-ms-keyframes move{
+    0%{background-position:0 0; }
+    100%{background-position:7680px 0px; }
+}
+@keyframes 
+move{
+ 0% {
+   background-position: 0 0;
+ }
+ 100% {
+     background-position: 7680px 0px;
+ }
+}
+
+@-webkit-keyframes font{
+    0%{font-size:0; }
+    100%{font-size:100%; }
+}
+@-moz-keyframes font{
+    0%{font-size:0; }
+    100%{font-size:100%; }
+}
+@-ms-keyframes font{
+    0%{font-size:0; }
+    100%{font-size:100%; }
+}
+@keyframes font{
+    0%{font-size:0; }
+     100%{font-size:100%; }
+}
+
+a{
+	text-decoration: none;
+}
+.container{
+  /*border:1px solid white;*/
+  width: 600px;
+  height: 350px;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  display: inline-flex; 
+}
+.backbox{  
+  background-color: #404040;
+  width: 100%;
+  height: 80%;
+  position: absolute;
+  transform: translate(0,-50%);
+  top:50%;
+  display: inline-flex;
+}
+
+.frontbox{
+  background-color: white;
+  border-radius: 20px;
+  height: 100%;
+  width: 50%;
+  z-index: 10;
+  position: absolute;
+  right:0;
+  margin-right: 3%;
+  margin-left: 3%;
+  transition: right .8s ease-in-out;
+}
+
+.moving{
+  right:45%;
+}
+
+.loginMsg, .signupMsg{
+  width: 50%;
+  height: 100%;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+.loginMsg .title,
+.signupMsg .title{
+  font-weight: 300;
+  font-size: 23px;
+}
+
+.loginMsg p,
+.signupMsg p {
+  font-weight: 100;
+}
+
+.textcontent{
+  color:white;
+  margin-top:65px;
+  margin-left: 12%;
+}
+
+.loginMsg button,
+.signupMsg button {
+  background-color: #404040;
+  border: 2px solid white;
+  border-radius: 10px;
+  color:white;
+  font-size: 12px;
+  box-sizing: content-box;
+  font-weight: 300;
+  padding:10px;
+  margin-top: 20px;
+  text-decoration: none;
+}
+
+/* front box content*/
+.login, .signup{
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.login h2,
+.signup h2 {
+  color: #35B729;
+  font-size:22px;
+  text-decoration: none;
+}
+
+.inputbox{
+  margin-top:30px; 
+}
+.login input, 
+.signup input {
+  display: block;
+  width: 100%;
+  height: 40px;
+  background-color: #f2f2f2;
+  border: none;
+  margin-bottom:20px;
+  font-size: 12px;
+}
+
+.login button,
+.signup button{
+  background-color: #35B729;
+  border: none;
+  color:white;
+  font-size: 12px;
+  font-weight: 300;
+  box-sizing: content-box;
+  padding:10px;
+  border-radius: 10px;
+  width: 60px;
+  position: absolute;
+  right:30px;
+  bottom: 30px;
+  cursor: pointer;
+  text-decoration: none;
+
+}
+
+/* Fade In & Out
+.login p {
+  cursor: pointer;
+  color:#404040;
+  font-size:15px;
+}*/
+
+.loginMsg, .signupMsg{
+  /*opacity: 1;*/
+  transition: opacity .8s ease-in-out;
+}
+
+.visibility{
+  opacity: 0;
+}
+
+.hide{
+  display: none;
+}

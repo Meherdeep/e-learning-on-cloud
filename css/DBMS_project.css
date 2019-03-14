@@ -1,0 +1,229 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
+html {
+	font-family: sans;
+	margin: 0;
+	padding:0;
+	font-family: "Source Sans Pro Light", Ubuntu, Arial, sans-serif;
+	font-size:12px;
+}
+
+
+body {
+        background:"C:\Users\Meherdeep Thakur\Documents\NetBeansProjects\DBMS Project\images\website-background.png";
+        background-color: blue;
+        font-size: '13px';
+        font-family: 'Open Sans', sans-serif;
+   
+        font-size: '13px';
+        font-family: 'Open Sans', sans-serif;
+      
+	  	
+		background-size:7680px 2160px;
+		image-rendering: optimizeSpeed;
+        image-rendering: -moz-crisp-edges;
+        image-rendering: -o-crisp-edges;
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: pixelated;
+        image-rendering: optimize-contrast;
+        -ms-interpolation-mode: nearest-neighbor;
+        -webkit-animation:move 300s linear infinite;
+        -moz-animation:move 300s linear infinite;
+        -ms-animation:move 300s linear infinite;
+        animation:move 300s linear infinite;
+        z-index: -2;*/
+	}
+	@-webkit-keyframes move {
+ 0% {
+   background-position: 0 0;
+ }
+ 100% {
+     background-position: 7680px 0px;
+ }
+}@
+moz-keyframes move{
+    0% {background-position: 0 0;}
+    100%{background-position:7680px 0px;}
+}
+
+@-ms-keyframes move{
+    0%{background-position:0 0; }
+    100%{background-position:7680px 0px; }
+}
+@keyframes 
+move{
+ 0% {
+   background-position: 0 0;
+ }
+ 100% {
+     background-position: 7680px 0px;
+ }
+}
+
+@-webkit-keyframes font{
+    0%{font-size:0; }
+    100%{font-size:100%; }
+}
+@-moz-keyframes font{
+    0%{font-size:0; }
+    100%{font-size:100%; }
+}
+@-ms-keyframes font{
+    0%{font-size:0; }
+    100%{font-size:100%; }
+}
+@keyframes font{
+    0%{font-size:0; }
+     100%{font-size:100%; }
+}
+
+.content{
+        z-index: 1;
+	top:calc(50vh - 190px);
+	position:absolute;
+	width:100%;
+	height:380px;
+	border-radius:3px;
+	text-align:center;
+}
+.aboutme {
+	margin-left:calc(10% - 10px);
+	background:rgba(0,0,89, .5);
+	color:#fff;
+	width:80%;
+	padding:10px;
+	border-radius:3px;
+	text-align:justify;
+	-webkit-animation:font .1s linear;
+    -moz-animation:font .1s linear;
+    -ms-animation:font .1s linear;
+    animation:font .1s linear;
+}
+
+.aboutme p{
+	margin:0;
+	padding:10px 0;
+}
+
+.profile {
+	height:220px;
+
+	width:220px;
+	margin-left:calc(50% - 110px);
+	text-align:center;
+	cursor:pointer;
+}
+.profile svg {
+	-webkit-filter: drop-shadow(0 0 1px #0000ff) drop-shadow(0 0 40px rgba(255, 255, 255, 0.4));
+	filter: drop-shadow(0 0 1px #0000ff) drop-shadow( 0 0 40px rgba(255, 255, 255, 0.4));
+	fill:#fff;
+	width:150px;
+	height:150px;
+}
+.profile svg path:nth-of-type(4) {
+	animation: lightning 5s linear infinite;
+}
+.profile a {
+	text-decoration:none;
+}
+.profile h1{
+	text-shadow: 0 0 40px rgba(255, 255, 255, 0.4), 0 0 1px #0000ff;
+	opacity: .99;
+	text-decoration:none;
+	color:#fff;
+	font-size:40px;
+	letter-spacing:5px;
+	padding:0;
+	margin:0;
+}
+
+@keyframes upper {
+    0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+        opacity: .99;
+        text-shadow: 0 0 40px rgba(255, 255, 255, 0.4), 0 0 1px #0000ff;
+    }
+    20%,
+    21.999%,
+    63%,
+    63.999%,
+    65%,
+    69.999% {
+        opacity: 0.4;
+        text-shadow: none;
+    }
+}
+
+@keyframes lightning {
+    0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+        opacity: 0;
+        
+    }
+    20%,
+    21.999%,
+    63%,
+    63.999%,
+    65%,
+    69.999% {
+        opacity: 0.99;
+        -webkit-filter: drop-shadow(0 0 1px #0000ff) drop-shadow(0 0 40px #ffffff);
+	filter: drop-shadow(0 0 1px #0000ff) drop-shadow( 0 0 10px #ffffff);
+    }
+}
+.profile h1 span {
+	letter-spacing:0px;
+	animation: upper 10s linear infinite;
+}
+.navigation> a svg{
+	-webkit-filter: drop-shadow(0 0 1px #0000ff) drop-shadow(0 0 40px rgba(255, 255, 255, 0.4));
+	filter: drop-shadow(0 0 1px #0000ff) drop-shadow( 0 0 40px rgba(255, 255, 255, 0.4));
+	vertical-align:middle;
+	fill:#fff;
+	padding:5px;
+	margin: 20px;
+}
+
+.navigation> a:hover:nth-of-type(1) svg{
+	color: #DF1B63;
+	fill: #DF1B63;
+	border-color:#DF1B63;  
+}
+.navigation> a:hover:nth-of-type(2) svg {
+	color: #1a51dd;
+	fill: #1a51dd;
+	border-color:#1a51dd;
+}
+
+.navigation> a:hover:nth-of-type(3) svg {
+	color: #990000;
+	fill: #990000;
+	border-color:#990000;
+}
+
+.navigation> a:hover:nth-of-type(4) svg {
+	color: #ddd41a;
+	fill: #ddd41a;
+	border-color:#ddd41a;
+}
+.navigation> a:hover:nth-of-type(5) svg{
+	color: #ddd41a;
+	fill: #ddd41a;
+	border-color:#ddd41a;
+}
+.navigation> a:hover:nth-of-type(6) svg {
+	color: #E99E00;
+	fill: #E99E00;
+	border-color:#E99E00 ;
+}
+
+.navigation> a:hover:nth-of-type(7) svg {
+	color: #DF1B63;
+	fill: #DF1B63;
+	border-color:#DF1B63 ;
+	
+}
+
+.navigation> a:hover:nth-of-type(8) svg {
+	color: #3D3D3D;
+	fill: #3D3D3D;
+	border-color:#3D3D3D ;
+}
+

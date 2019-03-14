@@ -1,0 +1,234 @@
+.product-image {
+  float: left;
+  width: 20%;
+}
+
+.product-details {
+  float: left;
+  width: 37%;
+}
+
+.product-price {
+  float: left;
+  width: 12%;
+  
+}
+
+.product-quantity {
+  float: left;
+  width: 10%;
+}
+
+.product-removal {
+  float: left;
+  width: 9%;
+}
+
+.product-line-price {
+  float: left;
+  width: 12%;
+  text-align: right;
+}
+
+/* This is used as the traditional .clearfix class */
+.group:before, .shopping-cart:before, .column-labels:before, .product:before, .totals-item:before,
+.group:after,
+.shopping-cart:after,
+.column-labels:after,
+.product:after,
+.totals-item:after {
+  content: '';
+  display: table;
+}
+
+.group:after, .shopping-cart:after, .column-labels:after, .product:after, .totals-item:after {
+  clear: both;
+}
+
+.group, .shopping-cart, .column-labels, .product, .totals-item {
+  zoom: 1;
+}
+
+/* Apply clearfix in a few places */
+/* Apply dollar signs */
+.product .product-price:before, .product .product-line-price:before, .totals-value:before {
+  content: 'Rs ';
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+          background:"website-background.png";
+        background-color: blue;
+        font-size: '13px';
+        font-family: 'Open Sans', sans-serif;
+   
+        font-size: '13px';
+        font-family: 'Open Sans', sans-serif;
+      
+      padding: 0px 30px 30px 20px;
+    background-size:7680px 2160px;
+    image-rendering: optimizeSpeed;
+        image-rendering: -moz-crisp-edges;
+        image-rendering: -o-crisp-edges;
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: pixelated;
+        image-rendering: optimize-contrast;
+        -ms-interpolation-mode: nearest-neighbor;
+        -webkit-animation:move 300s linear infinite;
+        -moz-animation:move 300s linear infinite;
+        -ms-animation:move 300s linear infinite;
+        animation:move 300s linear infinite;
+        z-index: -2;
+}
+@-webkit-keyframes move {
+ 0% {
+   background-position: 0 0;
+ }
+ 100% {
+     background-position: 7680px 0px;
+ }
+}@
+moz-keyframes move{
+    0% {background-position: 0 0;}
+    100%{background-position:7680px 0px;}
+}
+
+@-ms-keyframes move{
+    0%{background-position:0 0; }
+    100%{background-position:7680px 0px; }
+}
+@keyframes 
+move{
+ 0% {
+   background-position: 0 0;
+ }
+ 100% {
+     background-position: 7680px 0px;
+ }
+}
+
+@-webkit-keyframes font{
+    0%{font-size:0; }
+    100%{font-size:100%; }
+}
+@-moz-keyframes font{
+    0%{font-size:0; }
+    100%{font-size:100%; }
+}
+@-ms-keyframes font{
+    0%{font-size:0; }
+    100%{font-size:100%; }
+}
+@keyframes font{
+    0%{font-size:0; }
+     100%{font-size:100%; }
+}
+
+
+h1 {
+  font-weight: 100;
+  color: #0038a8;
+
+  margin-bottom: 2px;
+}
+a{
+  text-decoration: none;
+}
+label {
+  color: #0038a8;
+}
+
+.shopping-cart {
+  margin-top: -35px;
+  background-color: #EFF3ED;
+  padding-bottom: 7px;
+  padding-right: 7px;
+  padding-left: 7px;
+  padding-top: 7px;
+}
+
+/* Column headers */
+.column-labels label {
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #eee;
+}
+.column-labels .product-image, .column-labels .product-details, .column-labels .product-removal {
+  text-indent: -9999px;
+}
+
+/* Product entries */
+.product {
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+.product .product-image {
+  text-align: center;
+}
+.product .product-image img {
+  width: 100px;
+}
+.product .product-details .product-title {
+  margin-right: 20px;
+  font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium";
+}
+.product .product-details .product-description {
+  margin: 5px 20px 5px 0;
+  line-height: 1.4em;
+}
+.product .product-quantity input {
+  width: 40px;
+}
+.product .remove-product {
+  border: 0;
+  padding: 4px 8px;
+  background-color: #c66;
+  color: #fff;
+  font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium";
+  font-size: 12px;
+  border-radius: 3px;
+}
+.product .remove-product:hover {
+  background-color: #a44;
+}
+
+/* Totals section */
+.totals .totals-item {
+  float: right;
+  clear: both;
+  width: 100%;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.totals .totals-item label {
+  float: left;
+  clear: both;
+  width: 79%;
+  text-align: right;
+}
+
+.totals .totals-item .totals-value {
+  float: right;
+  width: 21%;
+  margin-right: 10px;
+  text-align: right;
+}
+.totals .totals-item-total {
+  font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium";
+}
+
+.checkout {
+  float: right;
+  border: 0;
+  margin-top: 20px;
+  padding: 6px 25px;
+  background-color: #6b6;
+  font-size: 25px;
+  border-radius: 3px;
+}
+
+.checkout:hover {
+  background-color: #494;
+}
+
