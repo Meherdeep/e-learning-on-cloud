@@ -36,7 +36,7 @@ function login() {
     var pass = document.getElementsByName('password')[0].value;
 
     var request = new XMLHttpRequest();
-    var req_url = 'https://e-learning-on-cloud.herokuapp.com/login?email=' + email + '&pass=' + pass;
+    var req_url = 'http://localhost:5000/login?email=' + email + '&pass=' + pass;
     // console.log(req_url);
     request.open('GET', req_url, true);
     request.onload = function () {
@@ -63,7 +63,7 @@ function signup() {
     var pass = document.getElementsByName('password')[1].value;
 
     var request = new XMLHttpRequest();
-    var req_url = 'https://e-learning-on-cloud.herokuapp.com/register?email=' + email + '&pass=' + pass + '&name=' + name;
+    var req_url = 'http://localhost:5000/register?email=' + email + '&pass=' + pass + '&name=' + name;
     // console.log(req_url);
     request.open('GET', req_url, true);
     request.onload = function () {
