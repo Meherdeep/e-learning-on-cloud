@@ -74,7 +74,7 @@ body .progress_inner__step:before, body .progress_inner, body .progress_inner__s
   right: 0;
   top: 50%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   margin: auto;
 }
 
@@ -236,7 +236,7 @@ body .progress_inner__status {
   top: -80px;
   transition: right 800ms cubic-bezier(0.915, 0.015, 0.3, 1.005);
   -webkit-transform: translateX(50%);
-          transform: translateX(50%);
+  transform: translateX(50%);
   position: absolute;
 }
 body .progress_inner__status div {
@@ -269,7 +269,7 @@ body .progress_inner__status .box_item {
   z-index: 0;
   border-radius: 4px;
   -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 body .progress_inner__status .box_ribbon {
   width: 10px;
@@ -295,12 +295,12 @@ body .progress_inner__status .box_bow {
 body .progress_inner__status .box_bow__left {
   left: 6px;
   -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 body .progress_inner__status .box_bow__right {
   left: -4px;
   -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 body .progress_inner__status .box_tag {
   width: 20px;
@@ -308,7 +308,7 @@ body .progress_inner__status .box_tag {
   background: #487ac7;
   z-index: 4;
   -webkit-transform: rotate(-10deg) translateX(-40px) translateY(0px);
-          transform: rotate(-10deg) translateX(-40px) translateY(0px);
+  transform: rotate(-10deg) translateX(-40px) translateY(0px);
   border-radius: 2px;
   transition-delay: 500ms;
 }
@@ -318,7 +318,7 @@ body .progress_inner__status .box_string {
   background: #343434;
   z-index: 4;
   -webkit-transform: rotate(-39deg) translateX(-22px) translateY(-12px);
-          transform: rotate(-39deg) translateX(-22px) translateY(-12px);
+  transform: rotate(-39deg) translateX(-22px) translateY(-12px);
 }
 body .progress_inner input[type="radio"] {
   display: none;
@@ -335,12 +335,21 @@ h1, h2 { font-size:24pt; letter-spacing:-.38px; }
 
 
 .margin {
+<<<<<<< HEAD
+  width:10in;
+  height: 7.2in;
+  border:2px solid red;
+  position: relative;
+  top:.5in;
+  left:.5in;
+=======
     width:10in;
     height: 7.2in;
     border:2px solid red;
     position: relative;
     top:.5in;
     left:.5in;
+>>>>>>> e2e67f5d6abd3bcd794b3584ef0834d83ec2fd93
   border: 2px solid #625b7c;
   border-radius: 0.09in;
   padding:3px;
@@ -393,8 +402,13 @@ h1, h2 { font-size:24pt; letter-spacing:-.38px; }
 .cert-url       { font-size:7pt; }
 .cert-legal .legal-copy { margin-top:.25in;  }
 
+<<<<<<< HEAD
+.cert-logo      { width:130pt; height:130pt;
+  padding-top:20pt; padding-bottom:50pt; }
+=======
 .cert-logo      { width:130pt; height:130pt; 
                   padding-top:20pt; padding-bottom:50pt; }
+>>>>>>> e2e67f5d6abd3bcd794b3584ef0834d83ec2fd93
 .cert-logo p    { line-height:1; }
 .cert-slogan    { font-size:7pt; font-weight:bold; line-height:1.2;}
 .cert-logo .cert-slogan { display:inline-block; width:80%; }
@@ -429,5 +443,9 @@ div.page[size="A4"][layout="portrait"] {
 @page {
   size: A4 landscape;
   /*margin: .5in;*/
+<<<<<<< HEAD
+}
+=======
 }
 
+>>>>>>> e2e67f5d6abd3bcd794b3584ef0834d83ec2fd93
