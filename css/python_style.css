@@ -335,12 +335,21 @@ h1, h2 { font-size:24pt; letter-spacing:-.38px; }
 
 
 .margin {
+<<<<<<< HEAD
   width:10in;
   height: 7.2in;
   border:2px solid red;
   position: relative;
   top:.5in;
   left:.5in;
+=======
+    width:10in;
+    height: 7.2in;
+    border:2px solid red;
+    position: relative;
+    top:.5in;
+    left:.5in;
+>>>>>>> e2e67f5d6abd3bcd794b3584ef0834d83ec2fd93
   border: 2px solid #625b7c;
   border-radius: 0.09in;
   padding:3px;
@@ -393,8 +402,13 @@ h1, h2 { font-size:24pt; letter-spacing:-.38px; }
 .cert-url       { font-size:7pt; }
 .cert-legal .legal-copy { margin-top:.25in;  }
 
+<<<<<<< HEAD
 .cert-logo      { width:130pt; height:130pt;
   padding-top:20pt; padding-bottom:50pt; }
+=======
+.cert-logo      { width:130pt; height:130pt; 
+                  padding-top:20pt; padding-bottom:50pt; }
+>>>>>>> e2e67f5d6abd3bcd794b3584ef0834d83ec2fd93
 .cert-logo p    { line-height:1; }
 .cert-slogan    { font-size:7pt; font-weight:bold; line-height:1.2;}
 .cert-logo .cert-slogan { display:inline-block; width:80%; }
@@ -429,4 +443,9 @@ div.page[size="A4"][layout="portrait"] {
 @page {
   size: A4 landscape;
   /*margin: .5in;*/
+<<<<<<< HEAD
 }
+=======
+}
+
+>>>>>>> e2e67f5d6abd3bcd794b3584ef0834d83ec2fd93
