@@ -72,6 +72,28 @@ def products():
     # Return json response
     response = json.dumps(response)
     return response
+@app.route('/login')
+def login():
 
+    uname = request.args.get('email')
+    password = request.args.get('pass')
+    print(uname, password)
+    val = db.login.find_one({'uname': uname})
+    print(val)
+    
+    if val == None:
+        return 'Bad'
+    
+    if val['password'] == password:
+        return val['name']
+    return 'Bad'
+
+# http://localhost:5000/uid
+@app.route('/uid')
+def udi():
+
+    uname = request.args.get('email')
+    val = db.login.find_one({'uname': uname})
+    return val['uid']
 if __name__ == '__main__':
     app.run()
