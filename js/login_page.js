@@ -50,7 +50,7 @@ function login() {
         console.log(data);
     }
     else{
-        window.location.href = 'login_page.html';
+        window.location.href = 'login.html';
     }
     }
   request.send();
@@ -69,7 +69,7 @@ function signup() {
     request.onload = function () {
         var data = this.response;
         console.log(data);
-        window.location.href = 'login_page.html';
+        window.location.href = 'login.html';
     }
   request.send();
 }
