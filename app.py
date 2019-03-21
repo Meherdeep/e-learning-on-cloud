@@ -40,6 +40,9 @@ def send_js(path):
 @app.route('/css/<path:path>')
 def send_css(path):
     return send_from_directory('css', path)
+@app.route('/img/<path:path>')
+def send_img(path):
+    return send_from_directory('img', path)
 @app.route('/test')
 def test():
    return '<html><body><h1>Hello World</h1></body></html>'
