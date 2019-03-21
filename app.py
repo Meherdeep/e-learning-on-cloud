@@ -3,7 +3,7 @@ import json
 # import flask modules
 # Request - gets details for the request
 # Flask - creates the flask app
-from flask import Flask, request, send_from_directory
+from flask import Flask, request, send_from_directory, render_template
 
 # import flask_cors modules
 # CORS - enable Cross Origin Resource Sharing
@@ -28,16 +28,18 @@ CORS(app)
 #@app.route('/')
 #def root():
 #    return app.send_static_file('index.html')
+@app.route('/')
+def index():
+   return render_template(‘index.html’)
 @app.route('/js/<path:path>')
-def send_js(path):
-    return send_from_directory('js', path)
-@app.route('/css/<path:path>')
-def send_css(path):
-    return send_from_directory('css', path)
-@app.route('/<path:path>')
-def static_file(path):
-    return app.send_static_file(path)
-
+#def send_js(path):
+#    return send_from_directory('js', path)
+#@app.route('/css/<path:path>')
+#def send_css(path):
+#    return send_from_directory('css', path)
+@app.route('/test')
+def test():
+   return '<html><body><h1>Hello World</h1></body></html>'
 @app.route('/products')
 def products():
 
