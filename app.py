@@ -30,7 +30,7 @@ CORS(app)
 #    return app.send_static_file('index.html')
 @app.route('/')
 def index():
-   return render_template('index.html')
+   return render_template('login_page.html')
 #@app.route('/js/<path:path>')
 #def send_js(path):
 #    return send_from_directory('js', path)
