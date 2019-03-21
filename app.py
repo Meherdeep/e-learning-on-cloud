@@ -38,10 +38,10 @@ def index_login():
 def index_welcome():
    return render_template('welcome.html')
 @app.route('/Python')
-def index_login():
+def index_Python():
    return render_template('Python.html')
 @app.route('/WebDev')
-def index_login():
+def index_WebDev():
    return render_template('WebDev.html')
 
 @app.route('/js/<path:path>')
