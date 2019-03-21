@@ -34,6 +34,9 @@ def send_js(path):
 @app.route('/css/<path:path>')
 def send_css(path):
     return send_from_directory('css', path)
+@app.route('/index/')
+def root():
+    return app.send_static_file('index.html')
 
 @app.route('/products')
 def products():
