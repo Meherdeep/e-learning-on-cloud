@@ -26,7 +26,7 @@ CORS(app)
 # Route at which the request is processed
 # http://localhost:5000/products
 @app.route('/', defaults={'page': 'index'})
-@app.route('/<page>')
+@app.route('/templates/<page>')
 def html_lookup(page):
     try:
         return render_template('{}.html'.format(page))
@@ -41,12 +41,12 @@ def html_lookup(page):
 @app.route('/welcome')
 def index_welcome():
    return render_template('welcome.html')
-#@app.route('/Python')
-#def index_Python():
-#   return render_template('Python.html')
-#@app.route('/WebDev')
-#def index_WebDev():
-#   return render_template('WebDev.html')
+@app.route('/Python')
+def index_Python():
+   return render_template('Python.html')
+@app.route('/WebDev')
+def index_WebDev():
+   return render_template('WebDev.html')
 
 @app.route('/js/<path:path>')
 def send_js(path):
