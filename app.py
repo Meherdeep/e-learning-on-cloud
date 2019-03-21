@@ -20,7 +20,7 @@ db = client[params['database_name']]
 collection = db[params['collection_name']]
 
 # Create the app and enable CORS
-app = Flask(__name__)
+app = Flask(__name__, static_url_path='')
 CORS(app)
 
 # Route at which the request is processed
