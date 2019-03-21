@@ -86,6 +86,7 @@ def login():
     
     if val['password'] == password:
         return val['name']
+        return render_template('welcome.html')
     return 'Bad'
 
 # http://localhost:5000/uid
