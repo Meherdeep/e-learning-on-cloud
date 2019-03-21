@@ -86,8 +86,9 @@ def login():
     
     if val['password'] == password:
         return val['name']
-        return render_template('welcome.html')
+#        return render_template('welcome.html')
     return 'Bad'
+    return render_template('welcome.html')
 
 # http://localhost:5000/uid
 @app.route('/uid')
