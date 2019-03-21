@@ -4,7 +4,7 @@ import json
 # Request - gets details for the request
 # Flask - creates the flask app
 from flask import Flask, request, send_from_directory, render_template
-
+from jinja2 import TemplateNotFound
 # import flask_cors modules
 # CORS - enable Cross Origin Resource Sharing
 from flask_cors import CORS
@@ -25,24 +25,28 @@ CORS(app)
 
 # Route at which the request is processed
 # http://localhost:5000/products
+@app.route('/', defaults={'page': 'index'})
+@app.route('/<page>')
+def html_lookup(page):
+    try:
+        return render_template('{}.html'.format(page))
+    except TemplateNotFound:
+        abort(404)
 #@app.route('/')
-#def root():
-#    return app.send_static_file('index.html')
-@app.route('/')
-def index():
-   return render_template('index.html')
-@app.route('/login')
-def index_login():
-   return render_template('login_page.html')
-@app.route('/welcome')
-def index_welcome():
-   return render_template('welcome.html')
-@app.route('/Python')
-def index_Python():
-   return render_template('Python.html')
-@app.route('/WebDev')
-def index_WebDev():
-   return render_template('WebDev.html')
+#def index():
+#   return render_template('index.html')
+#@app.route('/login')
+#def index_login():
+#   return render_template('login_page.html')
+#@app.route('/welcome')
+#def index_welcome():
+#   return render_template('welcome.html')
+#@app.route('/Python')
+#def index_Python():
+#   return render_template('Python.html')
+#@app.route('/WebDev')
+#def index_WebDev():
+#   return render_template('WebDev.html')
 
 @app.route('/js/<path:path>')
 def send_js(path):
