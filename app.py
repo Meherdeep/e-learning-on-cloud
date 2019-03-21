@@ -34,6 +34,16 @@ def index():
 @app.route('/login')
 def index_login():
    return render_template('login_page.html')
+@app.route('/welcome')
+def index_welcome():
+   return render_template('welcome.html')
+@app.route('/Python')
+def index_login():
+   return render_template('Python.html')
+@app.route('/WebDev')
+def index_login():
+   return render_template('WebDev.html')
+
 @app.route('/js/<path:path>')
 def send_js(path):
     return send_from_directory('js', path)
