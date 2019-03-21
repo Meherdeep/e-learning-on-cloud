@@ -36,7 +36,7 @@ function login() {
     var pass = document.getElementsByName('password')[0].value;
 
     var request = new XMLHttpRequest();
-    var req_url = 'http://localhost:5000/login?email=' + email + '&pass=' + pass;
+    var req_url = 'https://e-learning-cloud.herokuapp.com/login?email=' + email + '&pass=' + pass;
     // console.log(req_url);
     request.open('GET', req_url, true);
     request.onload = function () {

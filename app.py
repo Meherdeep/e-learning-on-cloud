@@ -86,8 +86,21 @@ def login():
     
     if val['password'] == password:
         return val['name']
-        return render_template('welcome.html')
-    return 'Bad'
+#        return render_template('welcome.html')
+    return render_template('welcome.html')
+@app.route('/register')
+def register():
+
+    reg = {
+        'name': request.args.get('name'),
+        'uname': request.args.get('email'),
+        'password': request.args.get('pass'),
+    'uid': ''.join(random.choices(string.ascii_uppercase + string.digits, k=13))
+    }
+    print(reg)
+
+    db.login.insert_one(reg)
+    return 'Good'
 
 # http://localhost:5000/uid
 @app.route('/uid')
