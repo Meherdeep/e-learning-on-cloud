@@ -26,9 +26,8 @@ CORS(app)
 # Route at which the request is processed
 # http://localhost:5000/products
 @app.route('/')
-def index():
-    response="Hello World!!"
-    return response
+def root():
+    return app.send_static_file('index.html')
 
 
 @app.route('/products')
