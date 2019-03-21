@@ -74,7 +74,7 @@ def products():
     return response
 @app.route('/login')
 def login():
-
+    return render_template('login.html')
     uname = request.args.get('email')
     password = request.args.get('pass')
     print(uname, password)
