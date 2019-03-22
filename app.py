@@ -38,9 +38,9 @@ def html_lookup(page):
 @app.route('/welcome')
 def index_welcome():
    return render_template('welcome.html')
-@app.route('/Python')
+@app.route('/python')
 def index_Python():
-   return render_template('Python.html')
+   return render_template('python.html')
 @app.route('/WebDev')
 def index_WebDev():
    return render_template('WebDev.html')
