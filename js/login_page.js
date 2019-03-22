@@ -58,8 +58,6 @@ function login() {
     }
   request.send();
 }
-const queries = document.location.href.replace(/[^?]+/, '');
-registerLink.href = '/login.html' + queries;
 function signup() {
     console.log('signup enter');
     var name = document.getElementsByName('fullname')[0].value;

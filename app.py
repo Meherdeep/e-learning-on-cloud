@@ -35,22 +35,22 @@ def html_lookup(page):
 #@app.route('/')
 #def index():
 #   return render_template('index.html')
-#@app.route('/login')
-#def index_login():
-#   return render_template('login_page.html')
-#@app.route('/welcome')
-#def index_welcome():
-#   return render_template('welcome.html')
-#@app.route('/Python')
-#def index_Python():
-#   return render_template('Python.html')
-#@app.route('/WebDev')
-#def index_WebDev():
-#   return render_template('WebDev.html')
+@app.route('/login')
+def index_login():
+   return render_template('login_page.html')
+@app.route('/welcome')
+def index_welcome():
+   return render_template('welcome.html')
+@app.route('/Python')
+def index_Python():
+   return render_template('Python.html')
+@app.route('/WebDev')
+def index_WebDev():
+   return render_template('WebDev.html')
 
-#@app.route('/js/<path:path>')
-#def send_js(path):
-#    return send_from_directory('js', path)
+@app.route('/js/<path:path>')
+def send_js(path):
+    return send_from_directory('js', path)
 @app.route('/css/<path:path>')
 def send_css(path):
     return send_from_directory('css', path)
