@@ -47,7 +47,7 @@ function login() {
       console.log(data);
 
     if(data !== 'Bad'){
-        window.location.href = 'welcome.html';
+        window.location.href = './welcome';
         sessionStorage.setItem('uname', email);
         sessionStorage.setItem('fullname', data);
         console.log(data);
