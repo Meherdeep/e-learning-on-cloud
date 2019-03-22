@@ -35,9 +35,6 @@ def html_lookup(page):
 #@app.route('/')
 #def index():
 #   return render_template('index.html')
-@app.route('/login')
-def index_login():
-   return render_template('login_page.html')
 @app.route('/welcome')
 def index_welcome():
    return render_template('welcome.html')
