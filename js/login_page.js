@@ -35,9 +35,12 @@ function login() {
     var email = document.getElementsByName('email')[0].value;
     var pass = document.getElementsByName('password')[0].value;
 
-    var request = new XMLHttpRequest();
-    var req_url = 'https://e-learning-cloud.herokuapp.com/login?email=' + email + '&pass=' + pass;
+    request = new XMLHttpRequest();
+    var req_url = 'http://localhost:5000/login?email=' + email + '&pass=' + pass;
     // console.log(req_url);
+    //const redirectUrl = getQueryStringValue('redirect') || SERVER_URL;
+    //const auth = new AuthHandler(SERVER_URL);
+
     request.open('GET', req_url, true);
     request.onload = function () {
       var data = this.response;
@@ -55,7 +58,8 @@ function login() {
     }
   request.send();
 }
-
+const queries = document.location.href.replace(/[^?]+/, '');
+registerLink.href = '/login.html' + queries;
 function signup() {
     console.log('signup enter');
     var name = document.getElementsByName('fullname')[0].value;
