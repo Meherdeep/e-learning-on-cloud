@@ -53,7 +53,7 @@ function login() {
         console.log(data);
     }
     else{
-        window.location.href = 'login.html';
+        window.location.href = './login';
     }
     }
   request.send();
@@ -71,7 +71,7 @@ function signup() {
     request.onload = function () {
         var data = this.response;
         console.log(data);
-        window.location.href = 'login.html';
+        window.location.href = './login';
     }
   request.send();
 }
